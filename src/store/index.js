@@ -15,6 +15,10 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
+    case "ADD_LIST":
+      return {
+        lists: [...state.lists, action.payload],
+      };
     case "DONE_LIST":
     return {
       lists: state.lists.map((list) => {
@@ -28,10 +32,6 @@ const reducer = (state = initialState, action) => {
     case "DELETE_LIST":
       return {
         lists: state.lists.filter((list) => list.name !== action.payload),
-      };
-    case "ADD_LIST":
-      return {
-        lists: [...state.lists, action.payload],
       };
     default:
       return state;
