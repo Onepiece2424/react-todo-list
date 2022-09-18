@@ -8,6 +8,9 @@ function App() {
   const doneList = (name) => {
     dispatch({ type: "DONE_LIST", payload: name });
   };
+  const deleteList = (name) => {
+    dispatch({ type: "DELETE_LIST", payload: name });
+  };
   return (
     <div className="App">
       <h1>ReduxでTodoリスト作成</h1>
