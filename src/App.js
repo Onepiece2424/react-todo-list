@@ -18,7 +18,7 @@ function App() {
         .map((list, index) => (
           <div key={index}>
             {list.name}
-            <button onClick={() => DOMTokenList(list.name)}>完了</button>
+            <button onClick={() => doneList(list.name)}>完了</button>
             </div>
         ))}
       </ul>
