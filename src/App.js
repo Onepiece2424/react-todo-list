@@ -13,6 +13,9 @@ function App() {
   };
   const [name, setName] = useState("");
   const [complete, setComplete] = useState(false);
+  const inputText = (e) => {
+    setName(e.target.value);
+  };
   return (
     <div className="App">
       <h1>ReduxでTodoリスト作成</h1>
