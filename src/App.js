@@ -19,6 +19,7 @@ function App() {
           <div key={index}>
             {list.name}
             <button onClick={() => doneList(list.name)}>完了</button>
+            <button onClick={() => deleteList(list.name)}>削除</button>
             </div>
         ))}
       </ul>
