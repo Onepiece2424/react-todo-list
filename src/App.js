@@ -13,7 +13,10 @@ function App() {
         {lists
         .filter((list) => list.complete === false)
         .map((list, index) => (
-          <div key={index}>{list.name}</div>
+          <div key={index}>
+            {list.name}
+            <button onClick={() => DOMTokenList(list.name)}>完了</button>
+            </div>
         ))}
       </ul>
       <h2>完了したTodoリスト</h2>
