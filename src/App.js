@@ -20,6 +20,7 @@ function App() {
     <div className="App">
       <h1>ReduxでTodoリスト作成</h1>
       <input type="text" value={name} onChange={inputText} />
+      <button onClick={addList}>追加</button>
       <h2>未完了のTodoリスト</h2>
       <ul>
         {lists
