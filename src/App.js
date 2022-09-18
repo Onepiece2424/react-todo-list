@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 import { useSelector, useDispatch } from "react-redux";
+import UseEffectExample from "./components/UseEffectExample";
 
 function App() {
 
@@ -64,6 +65,8 @@ function App() {
           <div key={index}>{list.name}</div>
         ))}
       </ul>
+      <div>UseEffectの使用</div>
+      <UseEffectExample />
     </div>
   );
 }
