@@ -8,10 +8,20 @@ function App() {
   return (
     <div className="App">
       <h1>ReduxでTodoリスト作成</h1>
-      <h2>Todoリスト</h2>
+      <h2>未完了のTodoリスト</h2>
       <ul>
-        {lists.map((list, index) => (
-          <li key={index}>{list.name}</li>
+        {lists
+        .filter((list) => list.complete == false)
+        .map((list, index) => (
+          <div key={index}>{list.name}</div>
+        ))}
+      </ul>
+      <h2>完了したTodoリスト</h2>
+      <ul>
+        {lists
+        .filter((list) => list.complete == true)
+        .map((list, index) => (
+          <div key={index}>{list.name}</div>
         ))}
       </ul>
     </div>
