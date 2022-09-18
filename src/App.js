@@ -11,7 +11,7 @@ function App() {
       <h2>未完了のTodoリスト</h2>
       <ul>
         {lists
-        .filter((list) => list.complete == false)
+        .filter((list) => list.complete === false)
         .map((list, index) => (
           <div key={index}>{list.name}</div>
         ))}
@@ -19,7 +19,7 @@ function App() {
       <h2>完了したTodoリスト</h2>
       <ul>
         {lists
-        .filter((list) => list.complete == true)
+        .filter((list) => list.complete === true)
         .map((list, index) => (
           <div key={index}>{list.name}</div>
         ))}
