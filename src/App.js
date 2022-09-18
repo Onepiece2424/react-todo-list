@@ -1,10 +1,13 @@
 import React from "react";
 import './App.css';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 function App() {
   const lists = useSelector((state) => state.lists);
-
+  const dispatch = useDispatch();
+  const doneList = (name) => {
+    dispatch({ type: "DONE_LIST", payload: name });
+  };
   return (
     <div className="App">
       <h1>ReduxでTodoリスト作成</h1>
