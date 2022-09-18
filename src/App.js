@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './App.css';
 import { useSelector, useDispatch } from "react-redux";
 
@@ -11,6 +11,8 @@ function App() {
   const deleteList = (name) => {
     dispatch({ type: "DELETE_LIST", payload: name });
   };
+  const [name, setName] = useState("");
+  const [complete, setComplete] = useState(false);
   return (
     <div className="App">
       <h1>ReduxでTodoリスト作成</h1>
