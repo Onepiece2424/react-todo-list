@@ -2,8 +2,8 @@ import {useEffect, useState} from "react";
 
 function App() {
   const [name, setName] = useState('')
-  const [id, setId] = useState('deatiger')
-  const ids = ['deatiger', 'gaearon', 'aws', 'google', 'facebook']
+  const [id, setId] = useState('Onepiece2424')
+  const ids = ['deatiger', 'gaearon', 'aws', 'google', 'facebook', 'Onepiece2424']
   const getRandomId = () => {
     const _id = ids[Math.floor(Math.random() * ids.length)]
     setId(_id)
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div>
-      <p>{id}の、GitHub上の名前は{name}です。</p>
+      <p>{id}のGitHub上の名前は「{name}」です。</p>
       <button onClick={getRandomId}>IDを変更</button>
     </div>
   );
