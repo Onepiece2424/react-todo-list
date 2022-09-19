@@ -3,6 +3,7 @@ import './App.css';
 import { useSelector, useDispatch } from "react-redux";
 import UseEffectExample from "./components/UseEffectExample";
 import UseEffectApi from "./components/UseEffectApi";
+import UseEffectCount from "./components/UseEffectCount";
 
 function App() {
 
@@ -69,6 +70,7 @@ function App() {
       <div>UseEffectの使用</div>
       <UseEffectExample />
       <UseEffectApi />
+      <UseEffectCount />
     </div>
   );
 }
