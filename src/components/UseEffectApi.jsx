@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 
 function App() {
   const [name, setName] = useState('')
-  const [id, setId] = useState('Onepiece2424')
-  const ids = ['Onepiece2424', 'kingdom0927']
+  const [id, setId] = useState('deatiger')
+  const ids = ['deatiger', 'gaearon', 'aws', 'google', 'facebook']
   const getRandomId = () => {
     const _id = ids[Math.floor(Math.random() * ids.length)]
     setId(_id)
