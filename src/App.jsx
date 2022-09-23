@@ -6,7 +6,7 @@ import UseEffectApi from "./components/UseEffectApi";
 import UseEffectCount from "./components/UseEffectCount";
 import ReactMemo from "./components/ReactMemo";
 import ColoredMessage from "./components/ColoredMessage"
-
+import Child from "./components/Child";
 
 function App() {
 
@@ -47,8 +47,18 @@ function App() {
 
   const greeting = 'Welcome to the world of React.js!';
 
+  //React.memoを使用した時
+  console.log("render App");
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
+
   return (
     <div className="App">
+      <button onClick={() => setCount1(count1 + 1)}>countup App count</button>
+      <br></br>
+      <button onClick={() => setCount2(count2 + 1)}>countup App count</button>
+      <p>App: {count1}</p>
+      <Child count={count2} />
       {/* <h1>ReduxでTodoリスト作成</h1>
       <input type="text" value={name} onChange={inputText} />
       <button onClick={addList}>追加</button>
