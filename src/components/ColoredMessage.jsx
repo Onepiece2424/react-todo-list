@@ -5,7 +5,7 @@ const ColoredMessage = (props) => {
   }
   return (
     <>
-      <p style={contentStyle}>{props.message}</p>
+      <p style={contentStyle}>{props.children}</p>
     </>
   )
 }
