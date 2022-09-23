@@ -1,11 +1,12 @@
 const ColoredMessage = (props) => {
-  console.log(props);
   const contentStyle = {
-    color: "red",
+    color: props.color,
     fontSize: "20px"
   }
   return (
-    <p style={contentStyle}>元気です！</p>
+    <>
+      <p style={contentStyle}>{props.message}</p>
+    </>
   )
 }
 
