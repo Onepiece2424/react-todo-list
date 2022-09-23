@@ -90,6 +90,7 @@ function App() {
       <br></br>
       <br></br>
       <ColoredMessage color="red" message="お元気ですか？？？" />
+      <ColoredMessage color="pink" message="元気です!!" />
     </div>
   );
 }
