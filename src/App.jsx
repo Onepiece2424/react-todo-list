@@ -56,7 +56,7 @@ function App() {
     <div className="App">
       <button onClick={() => setCount1(count1 + 1)}>countup App count</button>
       <br></br>
-      <button onClick={() => setCount2(count2 + 1)}>countup App count</button>
+      <button onClick={() => setCount2(count2 + 1)}>countup Child count</button>
       <p>App: {count1}</p>
       <Child count={count2} />
       {/* <h1>ReduxでTodoリスト作成</h1>
