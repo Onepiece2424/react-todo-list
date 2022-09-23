@@ -3,6 +3,7 @@ const ReactMemo = (props) => {
       <>
         <h1>{props.title}</h1>
         <h2>{props.content}</h2>
+        <div>{props.text}</div>
       </>
     )
 };

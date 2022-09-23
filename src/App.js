@@ -44,6 +44,8 @@ function App() {
     setName("");
   };
 
+  const greeting = 'Welcome to the world of React.js!';
+
   return (
     <div className="App">
       <h1>ReduxでTodoリスト作成</h1>
@@ -79,6 +81,7 @@ function App() {
         <ReactMemo
           title={`新日本一わかりやすいReact講座`}
           content={`propsについて`}
+          text={greeting}
         />
       </div>
     </div>
