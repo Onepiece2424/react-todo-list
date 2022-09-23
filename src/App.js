@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 // import UseEffectExample from "./components/UseEffectExample";
 // import UseEffectApi from "./components/UseEffectApi";
 import UseEffectCount from "./components/UseEffectCount";
+import ReactMemo from "./components/ReactMemo";
+
 
 function App() {
 
@@ -73,6 +75,12 @@ function App() {
       <UseEffectCount />
       <br></br>
       <br></br>
+      <div>
+        <ReactMemo
+          title={`新日本一わかりやすいReact講座`}
+          content={`propsについて`}
+        />
+      </div>
     </div>
   );
 }
