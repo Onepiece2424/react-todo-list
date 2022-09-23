@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>ReduxでTodoリスト作成</h1>
+      {/* <h1>ReduxでTodoリスト作成</h1>
       <input type="text" value={name} onChange={inputText} />
       <button onClick={addList}>追加</button>
       <h2>未完了のTodoリスト</h2>
@@ -90,7 +90,7 @@ function App() {
       <br></br>
       <br></br>
       <ColoredMessage color="red">お元気ですか？？？</ColoredMessage>
-      <ColoredMessage color="pink">元気です!!</ColoredMessage>
+      <ColoredMessage color="pink">元気です!!</ColoredMessage> */}
     </div>
   );
 }
