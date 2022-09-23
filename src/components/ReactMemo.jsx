@@ -1,6 +1,6 @@
 const ReactMemo = (props) => {
     const textStyle = {
-      color: "blue",
+      color: props.color,
       fontSize: "16px"
     }
 

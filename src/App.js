@@ -82,6 +82,7 @@ function App() {
           title={`新日本一わかりやすいReact講座`}
           content={`propsについて`}
           text={greeting}
+          color="blue"
         />
       </div>
     </div>
