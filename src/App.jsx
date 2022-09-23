@@ -5,6 +5,7 @@ import UseEffectExample from "./components/UseEffectExample";
 import UseEffectApi from "./components/UseEffectApi";
 import UseEffectCount from "./components/UseEffectCount";
 import ReactMemo from "./components/ReactMemo";
+import ColoredMessage from "./components/ColoredMessage"
 
 
 function App() {
@@ -85,6 +86,10 @@ function App() {
           color="blue"
         />
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <ColoredMessage color="red" messagae="お元気ですか？？？" />
     </div>
   );
 }
